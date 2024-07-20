@@ -42,16 +42,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="teacher.html">Teacher</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="courses.html">Admission</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="blog.html">Blog</a>
-                        </li>
+                        </li> 
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
@@ -98,27 +89,57 @@
     </header>
     <!-- //header -->
 
-    <!-- banner section -->
-    <section id="home" class="w3l-banner py-5">
-        <div class="banner-content">
-            <div class="container py-4">
-                <div class="row align-items-center pt-sm-5 pt-4">
-                    <div class="col-md-6">
-                        <h3 class="mb-lg-4 mb-3">Welcome to <br>The Taw-Ally <span class="d-block"> Place School</span>
-                        </h3>
-                        <p class="banner-sub">.....Empowering youths minds for a brighter future, igniting curiosity, fostering excellence...</p>
-                        <div class="d-flex align-items-center buttons-banner">
-                            <a href="contact.html" class="btn btn-style mt-lg-5 mt-4">Admission Now</a>
-                        </div>
+    <div id="banner-section" class="banner-container">
+        <div class="banner-wrapper">
+            <section id="banner1" class="banner">
+                <div class="overlay"></div>
+                <video autoplay muted loop playsinline class="banner-video">
+                    <source src="assets/video/video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="banner-content">
+                    <img src="assets/images/logo.png" alt="The Taw-Ally Place School Logo" class="logo">
+                    <h1>The Taw-Ally Place School</h1>
+                    <p>Welcomes You, Get Ready To Learn</p>
+                    <div class="decorative-elements">
+                        <img src="assets/images/award.png" alt="Award Badge" class="badge">
+                        <img src="path/to/tripadvisor-badge.png" alt="Tripadvisor Badge" class="badge">
                     </div>
-                    <div class="col-md-6 right-banner-2 text-end position-relative mt-md-0 mt-5">
-                        
+                    <div class="#">
+                        <a href="contact.html" class="btn btn-style mt-5">Enroll Now</a>
                     </div>
                 </div>
-            </div>
+            </section>
+
+            <section id="banner2" class="banner">
+                <div class="overlay"></div>
+                <video autoplay muted loop playsinline class="banner-video">
+                    <source src="assets/video/video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="banner-content">
+                    <img src="assets/images/logo.png" alt="The Taw-Ally Place School Logo" class="logo">
+                    <h1>Discover Our Programs</h1>
+                    <p>We offer a wide range of educational programs to suit every child's needs.</p>
+                    <div class="#">
+                        <a href="contact.html" class="btn btn-style mt-5">Addmission Now</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Add more sections as needed -->
         </div>
-    </section>
-    <!-- //banner section -->
+
+        <div class="scroll-arrow left">
+            <a href="#"><img src="assets/images/left.png" alt="Left Arrow"></a>
+        </div>
+        <div class="scroll-arrow right">
+            <a href="#"><img src="assets/images/right.png" alt="Right Arrow"></a>
+        </div>
+    </div>
+
+
+
 
    <!-- home 4grids block -->
 <section class="services-w3l-block py-5" id="features">
@@ -177,18 +198,18 @@
                     </div>
                 </div>
                 <div class="col-xl-5 col-lg-6 offset-xl-1 mt-lg-0 mt-5 pt-lg-0 pt-5">
-                    <h3 class="title-style">Welcome to The Taw-Ally Place School</h3>
+                    <h3 class="title-style">The Taw-Ally Place School</h3>
                     <p class="mt-4">Welcome to The Taw-Ally Place School, where learning meets creativity and curiosity is encouraged!</p>
                             <p class="mt-4">Our school is dedicated to providing a nurturing environment where students can thrive academically, socially, and emotionally. With our experienced faculty and innovative teaching methods, we strive to inspire a love for learning in every child.</p>
                             <p class="mt-4">Located in the heart of our community, our school is surrounded by natural beauty and provides a serene setting for education. We believe in the importance of holistic development, fostering not only academic excellence but also character building and personal growth.</p>
                             <p class="mt-4">At The Taw-Ally Place School, we embrace diversity and celebrate individuality. We encourage our students to explore their passions, express their creativity, and discover their unique talents.</p>
                             <p class="mt-4">Come join us on this exciting journey of discovery and exploration. Together, let's empower our children to reach their full potential and become lifelong learners.</p>
                             <br>
-                            <h4>Mission Statement</h4>
+                            <h4 style="font-weight: 600; ">Mission Statement</h4>
                             <p class="mt-4">"To provide a nuturing and innovative school that is passionate about creating a safe and stimulating learning environment which encourages creativity, curiosity and critical thinking."</p><br>
                             <p>Join us as we lay the foundtion for a future of endless possibilities.</p>
                             <br>
-                            <h4>What We Offer:</h4>
+                            <h4 style="font-weight: 600;">What We Offer:</h4>
                     <ul class="mt-4 list-style-lis pt-lg-1">
                         <li><i class="fas fa-check-circle"></i>Early years foundation stage</li>
                         <li><i class="fas fa-check-circle"></i>Nigeria primary education curriculum</li>
@@ -229,7 +250,7 @@
                                     <li> <i class="fas fa-star"></i> 4.5</li>
                                 </ul>
                             </div>
-                            <h4><a href="courses.html">Creche</a></h4>
+                            <h4><a href="contact.html">Creche</a></h4>
                             <p>Our Creche program provides a safe and nurturing environment for infants and toddlers, fostering their early development and learning through play-based activities.</p>
                             
                         </div>
@@ -282,29 +303,56 @@
     </div>
     <!-- //courses section -->
 
-    <!-- why choose block -->
-    <section class="w3l-service-1 py-5">
-        <div class="container py-md-5 py-4">
-            <div class="title-main text-center mx-auto mb-md-5 mb-4" style="max-width:500px;">
-                <p class="text-uppercase">Why Choose Us</p>
-                <h3 class="title-style">Tools For Teachers And Learners</h3>
-            </div>
-            <div class="row content23-col-2 text-center">
-                <div class="col-md-6">
-                    <div class="content23-grid content23-grid1">
-                        <h4><a href="about.html">Expert Teachers</a></h4>
-                    </div>
+   
+   
+    <section id="photo-gallery">
+        <p class="text-uppercase">Events</p>
+        <h3 class="title-style">Photo Gallery</h3>
+        <br>
+        <br>
+        <br>
+        <div class="gallery">
+            <img src="assets/images/bg2.jpg" alt="Gallery Image 1">
+            <img src="assets/images/blog3.jpg" alt="Gallery Image 2">
+            <img src="assets/images/blog2.jpg" alt="Gallery Image 3">
+            <img src="assets/images/blog1.jpg" alt="Gallery Image 4">
+            <img src="assets/images/c1.jpg" alt="Gallery Image 5">
+            <img src="assets/images/c2.jpg" alt="Gallery Image 6">
+        </div>
+    </section>
+    
+    <!-- Modal for zoom and slide -->
+    <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
+
+    <br>
+    <br>
+ <!-- why choose block -->
+ <section class="w3l-service-1 py-5">
+    <div class="container py-md-5 py-4">
+        <div class="title-main text-center mx-auto mb-md-5 mb-4" style="max-width:500px;">
+            <p class="text-uppercase">Why Choose Us</p>
+            <h3 class="title-style">Tools For Teachers And Learners</h3>
+        </div>
+        <div class="row content23-col-2 text-center">
+            <div class="col-md-6">
+                <div class="content23-grid content23-grid1">
+                    <h4><a href="about.html">Expert Teachers</a></h4>
                 </div>
-                <div class="col-md-6 mt-md-0 mt-4">
-                    <div class="content23-grid content23-grid2">
-                        <h4><a href="about.html">Safe Environment</a></h4>
-                    </div>
+            </div>
+            <div class="col-md-6 mt-md-0 mt-4">
+                <div class="content23-grid content23-grid2">
+                    <h4><a href="about.html">Safe Environment</a></h4>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- //why choose block -->
-
+    </div>
+</section>
+<!-- //why choose block -->
     <!-- stats block -->
     <section class="w3-stats pt-4 pb-5" id="stats">
         <div class="container pb-md-5 pb-4">
@@ -345,64 +393,6 @@
         </div>
     </section>
     <!-- //stats block -->
-<!-- blog block -->
-<div class="w3l-blog-block-5 py-5" id="blog">
-    <div class="container py-md-5 py-4">
-        <div class="title-main text-center mx-auto mb-md-5 mb-4" style="max-width:500px;">
-            <p class="text-uppercase">Our News</p>
-            <h3 class="title-style">Latest <span>Blog</span> Posts</h3>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6">
-                <div class="blog-card-single">
-                    <div class="grids5-info">
-                        <a href="blog-single.html"><img src="assets/images/blog2.jpg" alt="Education Programs" /></a>
-                        <div class="blog-info">
-                            <h4><a href="blog-single.html">Innovative Education Programs Launched</a></h4>
-                            <p>Discover our new education programs designed to enhance student engagement and learning outcomes.</p>
-                            <div class="d-flex align-items-center justify-content-between mt-4">
-                                
-                                <p class="date-text"><i class="far fa-calendar-alt me-1"></i>Feb 06, 2024</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
-                <div class="blog-card-single">
-                    <div class="grids5-info">
-                        <a href="blog-single.html"><img src="assets/images/blog1.jpg" alt="Games Programs" /></a>
-                        <div class="blog-info">
-                            <h4><a href="blog-single.html">Engaging Games for Cognitive Development</a></h4>
-                            <p>Learn about our latest games designed to improve cognitive skills and make learning fun.</p>
-                            <div class="d-flex align-items-center justify-content-between mt-4">
-                                
-                                <p class="date-text"><i class="far fa-calendar-alt me-1"></i>Oct 10, 2021</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mt-lg-0 mt-4">
-                <div class="blog-card-single">
-                    <div class="grids5-info">
-                        <a href="blog-single.html"><img src="assets/images/blog3.jpg" alt="Articles Programs" /></a>
-                        <div class="blog-info">
-                            <h4><a href="blog-single.html">Insights into Effective Learning Strategies</a></h4>
-                            <p>Explore our comprehensive articles on the most effective learning strategies for students.</p>
-                            <div class="d-flex align-items-center justify-content-between mt-4">
-                                
-                                <p class="date-text"><i class="far fa-calendar-alt me-1"></i>Oct 12, 2021</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- //blog block -->
-
 
     <!-- call block -->
     <section class="w3l-call-to-action-6">
@@ -433,11 +423,11 @@
                 <div class="row footer-top-29">
                     <div class="col-lg-4 col-md-6 footer-list-29">
                         <h6 class="footer-title-29">Contact Info </h6>
-                        <p class="mb-2 pe-xl-5">Address : Road 9, Green Leaf Estate, Ebute, Igbogbo Road, Ikorodu, Lagos, Nigeria. 
+                        <p class="mb-2 pe-xl-5">Address : The Taw-Ally Place School, 32,Chief Olorunwo Avenue, Green Leaf Estate (Road 9), Ebute, Igbogbo Road, Ikorodu, Lagos, Nigeria. 
                         </p>
                         <p class="mb-2">Phone Number : <a href="tel:+2348060364077">+234 806-036-4077</a></p>
                         <p class="mb-2">Email : <a href="mailto:thetaw-allyplaceschool@gmail.com" class="mail">thetaw-allyplaceschool@gmail.com</a></p>
-                    </div>
+                    </div> 
                     <div class="col-lg-2 col-md-3 col-6 footer-list-29 mt-md-0 mt-4">
                         <ul>
                             <h6 class="footer-title-29">Quick Links</h6>
@@ -476,25 +466,11 @@
         </div>
     </footer>
     <!-- //footer block -->
-    <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/668aac09eaf3bd8d4d1922cb/1i26r022v';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+    <!-- Popup container -->
     <!-- Popup container -->
     <div id="popup">
         <div class="popup-content">
             <img src="assets/images/popup.png" alt="Grand Opening image"/>
-            <h2>Grand Opening Coming Soon!</h2>
-            <p>Get ready for the launch of our new school!</p>
         </div>
         <button id="close-popup">x</button>
     </div>
