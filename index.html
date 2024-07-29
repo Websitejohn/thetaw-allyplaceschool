@@ -4,7 +4,7 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <meta name="description" content="Welcome to The Taw-Ally Place School - A nurturing environment fostering excellence in education. Explore our programs, dedicated faculty, and vibrant community aimed at developing well-rounded individuals prepared for future success.">
     <meta name="keywords" content="The Taw-Ally Place School, education, elementary school, middle school, high school, academic excellence, student development, quality education, school community, nurturing environment">
     <meta name="robots" content="index, follow">
@@ -64,6 +64,7 @@
     background: rgba(242, 240, 243, 0.308);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
 }
 
 .congratulatory-message h2 {
@@ -88,188 +89,7 @@
     font-weight: bold;
     font-size: 1.1em;
 }
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-.banner-container {
-    position: relative;
-    overflow: hidden;
-    height: 100vh;
-    width: 100%;
-}
-
-.banner-wrapper {
-    display: flex;
-    transition: transform 0.8s ease-in-out;
-}
-
-.banner {
-    min-width: 100%;
-    position: relative;
-    height: 100vh;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 1;
-}
-
-.banner-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.8s ease-in-out;
-}
-
-.banner-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-    z-index: 2;
-    animation: fadeInUp 1s ease-out;
-}
-
-.banner-content img.logo {
-    width: 150px;
-    margin-bottom: 20px;
-}
-
-.banner-content h1, .banner-content p {
-    margin: 10px 0;
-}
-
-.banner-content h1 {
-    font-size: 3em;
-    animation: fadeIn 1s ease-out forwards;
-}
-
-.banner-content p {
-    font-size: 1.5em;
-    animation: fadeIn 2s ease-out forwards;
-}
-
-.decorative-elements .badge {
-    width: 50px;
-    margin: 10px;
-    animation: bounceIn 1s ease-in-out forwards;
-}
-
-.button-container a.btn {
-    animation: fadeIn 3s ease-out forwards;
-}
-
-.congratulatory-message {
-    animation: zoomIn 1s ease-out forwards;
-}
-
-.message-from {
-    margin-top: 20px;
-}
-
-.from, .person, .contact {
-    margin: 5px 0;
-}
-
-.from {
-    font-weight: bold;
-}
-
-.scroll-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    z-index: 10;
-}
-
-.scroll-arrow.left {
-    left: 10px;
-}
-
-.scroll-arrow.right {
-    right: 10px;
-}
-
-.scroll-arrow img {
-    width: 100%;
-    height: auto;
-}
-
-/* Animations */
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes bounceIn {
-    0%,
-    20%,
-    40%,
-    60%,
-    80%,
-    100% {
-        -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    }
-    0% {
-        opacity: 0;
-        -webkit-transform: scale3d(0.3, 0.3, 0.3);
-        transform: scale3d(0.3, 0.3, 0.3);
-    }
-    20% {
-        -webkit-transform: scale3d(1.1, 1.1, 1.1);
-        transform: scale3d(1.1, 1.1, 1.1);
-    }
-    40% {
-        -webkit-transform: scale3d(0.9, 0.9, 0.9);
-        transform: scale3d(0.9, 0.9, 0.9);
-    }
-    60% {
-        opacity: 1;
-        -webkit-transform: scale3d(1.03, 1.03, 1.03);
-        transform: scale3d(1.03, 1.03, 1.03);
-    }
-    80% {
-        -webkit-transform: scale3d(0.97, 0.97, 0.97);
-        transform: scale3d(0.97, 0.97, 0.97);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-    }
-}
-
-@keyframes zoomIn {
-    0% {
-        opacity: 0;
-        transform: scale(0.5);
-    }
     </style>
     
 </head>
@@ -345,22 +165,21 @@ body {
         </div>
     </header>
     <!-- //header -->
-            
-    <!-- Banner Section -->
+
     <div id="banner-section" class="banner-container">
         <div class="banner-wrapper">
             <section id="banner1" class="banner">
                 <div class="overlay"></div>
-                <img class="banner-image" src="assets/images/banner.png" alt="Banner Image 1">
+                <img class="banner-video" src="assets/images/banner.png">
                 <div class="banner-content">
                     <img src="assets/images/logo.png" alt="The Taw-Ally Place School Logo" class="logo">
-                    <h1 class="fade-in">The Taw-Ally Place School</h1>
-                    <p class="fade-in-delay">Welcomes You, Get Ready To Learn</p>
+                    <h1>The Taw-Ally Place School</h1>
+                    <p>Welcomes You, Get Ready To Learn</p>
                     <div class="decorative-elements">
                         <img src="assets/images/award.png" alt="Award Badge" class="badge">
                         <img src="path/to/tripadvisor-badge.png" alt="Tripadvisor Badge" class="badge">
                     </div>
-                    <div class="button-container">
+                    <div class="#">
                         <a href="contact.html" class="btn btn-style mt-5">Enroll Now</a>
                     </div>
                 </div>
@@ -368,39 +187,51 @@ body {
 
             <section id="banner2" class="banner">
                 <div class="overlay"></div>
-                <img class="banner-image" src="assets/images/img1.png" alt="Banner Image 2">
+                <img class="banner-video" src="assets/images/img1.png">
                 <div class="banner-content">
                     <img src="assets/images/logo.png" alt="The Taw-Ally Place School Logo" class="logo">
-                    <h1 class="fade-in">Discover Our Programs</h1>
-                    <p class="fade-in-delay">We offer a wide range of educational programs to suit every child's needs.</p>
-                    <div class="button-container">
+                    <h1>Discover Our Programs</h1>
+                    <p>We offer a wide range of educational <br>programs to suit every child's<br> needs.</p>
+                    <div class="#">
                         <a href="contact.html" class="btn btn-style mt-5">Admission Now</a>
                     </div>
                 </div>
             </section>
 
-            <section id="banner3" class="banner">
+            <section id="banner2" class="banner">
                 <div class="overlay"></div>
-                <img class="banner-image" src="assets/images/IMG-20240724-WA0009.jpg" alt="Banner Image 3">
-                <div class="banner-content congratulatory-slide">
+                <img class="banner-video" src="assets/images/bg.jpg">
+                <div class="banner-content">
+                    
+                    <div class="congratulatory-slide">
                     <div class="congratulatory-message">
-                        <h2 class="fade-in">ESALAGOS</h2>
-                        <p class="fade-in-delay">Congratulations to The Taw-Ally Place School on its grand opening! This is an exciting step forward in providing educational opportunities for the community. We wish you all the best in this new endeavour.</p>
-                        <div class="message-from fade-in-delay">
-                            <p class="from">Message from:</p>
-                            <p class="person">Adojutelegan Simbiat Adenike</p>
-                            <p class="contact">
-                                Address: Coral reef Estate <br>Opposite Capital Mall, Orchid Hotel Road <br>Chevron <br>Lagos
-                                Number: +234 812 143 1941
-                            </p>
+                        <h2 class="" style="margin-bottom: 10px;">ESALAGOS</h2>
+                       <article> <p style="color: black; font-family: Arial, Helvetica,;">Congratulations to The Taw-Ally<br> Place School on it's grand opening!<br>This is an exciting step forward in <br> providing educational opportunities<br>for the community. We wish you all<br> the best in this new endeavour </p></article>
+                        <div class="message-from">
+                            <p class="from" style="color: #181717;font-family: Georgia, 'Times New Roman', Times, ;">Message from:</p>
+                            <p class="person" style="color: #0e0e0d; font-family: Georgia, 'Times New Roman', Times, ;">Adojutelegan Simbiat Adenike</p>
+                            <p class="contact" ><Address style="text-align: justify; color: black;">Address: Coral Reef Estate<br> Opposite Capital Mall, Orchid Hotel Road, Chevron Lagos<br>Number: +234 812 143 1941</Address></p>
                         </div>
                     </div>
                 </div>
+                </div>
             </section>
+            
+
+
+            <!-- Add more sections as needed -->
         </div>
-        <div class="scroll-arrow left"><a href="#"><img src="assets/images/left-arrow.png" alt="Left Arrow"></a></div>
-        <div class="scroll-arrow right"><a href="#"><img src="assets/images/right-arrow.png" alt="Right Arrow"></a></div>
+
+        <div class="scroll-arrow left">
+            <a href="#"><img src="assets/images/left.png" alt="Left Arrow"></a>
+        </div>
+        <div class="scroll-arrow right">
+            <a href="#"><img src="assets/images/right.png" alt="Right Arrow"></a>
+        </div>
     </div>
+
+
+
 
    <!-- home 4grids block -->
 <section class="services-w3l-block py-5" id="features">
@@ -453,7 +284,7 @@ body {
                         <img src="assets/images/img1.png" alt="" class="img-fluid radius-image">
                     </div>
                     <div class="imginfo__box">
-                        <h6 class="imginfo__title">Get a Appointment Today!</h6>
+                        <h6 class="imginfo__title">Get an Appointment Today!</h6>
                         <p>Get in touch with us for a personalized <br> quote tailored to your needs.</p>
                         <a href="tel:+234 8060364077"><i class="fas fa-phone-alt"></i>+234 806-036-4077</a>
                     </div>
@@ -600,8 +431,7 @@ body {
                         <li class="phone-sec me-lg-4"><i class="fas fa-phone-volume"></i>
                             <a class="call-style-w3" href="tel:+2348060364077">+234 806-036-4077</a>
                         </li>
-                        <li><a href="contact.html" class="btn btn-style btn-style-2 mt-lg-0 mt-3">Join for free</a>
-                        </li>
+                       
                     </ul>
                 </div>
             </div>
