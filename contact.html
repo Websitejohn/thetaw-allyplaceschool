@@ -52,18 +52,6 @@
     <link href="//fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style-starter.css">
     <script src="assets/js/script.js"></script>
-    <style>
-        .map iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-            border-radius: 8px;
-
-        }
-    </style>
 </head>
 
 <body>
@@ -204,7 +192,7 @@
                                 </div>
                                 <div class="cont-right">
                                     <h6>Address</h6>
-                                    <p style="font-size: 13.5px;">The Taw-Ally Place School,<br> 32,Chief Olorunwo Avenue, <br>Green Leaf Estate (Road 9),<br> Ebute-Ipakodo, Ikorodu,<br> Lagos, Nigeria.</p>
+                                    <p style="font-size: 13.5px;">The Taw-Ally Place School,<br> 32,Chief Olorunwo Avenue, <br>Green Leaf Estate (Road 9),<br> Ebute, Igbogbo Road, Ikorodu,<br> Lagos, Nigeria.</p>
                                 </div>
                             </div>
                             <div class="d-flex contact-grid mt-4 pt-lg-2">
@@ -242,10 +230,11 @@
         </div>
     </section>
     <!-- map -->
-    <div class="map" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border: 1px solid #ccc; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); ">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.513965638088!2d3.5072905740462614!3d6.582847422472795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8df8675eae45%3A0xaae702904f15f9f4!2sThe%20Taw-Ally%20Place%20School!5e0!3m2!1sen!2sng!4v1722693598408!5m2!1sen!2sng" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317718.69319292053!2d-0.3817765050863085!3d51.528307984912544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C+UK!5e0!3m2!1sen!2spl!4v1562654563739!5m2!1se"
+            width="100%" height="400" frameborder="0" style="border: 0px;" allowfullscreen=""></iframe>
     </div>
-    <br>
     <!-- //contact block -->
 
     
@@ -256,7 +245,7 @@
                 <div class="row footer-top-29">
                     <div class="col-lg-4 col-md-6 footer-list-29">
                         <h6 class="footer-title-29">Contact Info </h6>
-                        <p class="mb-2 pe-xl-5" style="font-size: 13px;">Address : The Taw-Ally Place School, <br>32,Chief Olorunwo Avenue, Green Leaf<br> Estate (Road 9), Ebute-Ipakodo Road <br>Ikorodu, Lagos, Nigeria. 
+                        <p class="mb-2 pe-xl-5" style="font-size: 13px;">Address : The Taw-Ally Place School, <br>32,Chief Olorunwo Avenue, Green Leaf<br> Estate (Road 9), Ebute, Igbogbo Road, <br>Ikorodu, Lagos, Nigeria. 
                         </p>
                         <p class="mb-2" style="font-size: 13px;">Phone Number : <a href="tel:+2348060364077">+234 806-036-4077</a></p>
                         <p class="mb-2" style="font-size: 13px;">Email : <a href="mailto:thetaw-allyplaceschool@gmail.com" class="mail">thetaw-allyplaceschool@gmail.com</a></p>
@@ -265,7 +254,7 @@
                         <ul>
                             <h6 class="footer-title-29">Quick Links</h6>
                             <li><a href="about.html">About Us</a></li>
-                    
+                            <li><a href="courses.html">Courses</a></li>
                             <li><a href="#become-teacher">Become a Teacher</a></li>
                             <li><a href="contact.html">Contact Us</a></li>
                             <li><a href="#career">Career</a></li>
@@ -301,7 +290,31 @@
     <!-- //footer block -->
 
     <!-- Js scripts -->
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fas fa-level-up-alt" aria-hidden="true"></span>
+    </button>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
 
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- //move top -->
 
     <!-- common jquery plugin -->
     <script src="assets/js/jquery-3.3.1.min.js"></script>

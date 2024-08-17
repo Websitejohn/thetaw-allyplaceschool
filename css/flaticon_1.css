@@ -1,0 +1,110 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 13/09/2020 05:12
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon.eot#iefix") format("embedded-opentype"),
+       url("../fonts/Flaticon.woff2") format("woff2"),
+       url("../fonts/Flaticon.woff") format("woff"),
+       url("../fonts/Flaticon.ttf") format("truetype"),
+       url("../images/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../images/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+  font-style: normal;
+}
+
+.flaticon-loupe:before { content: "\f100"; }
+.flaticon-whatsapp:before { content: "\f101"; }
+.flaticon-translation:before { content: "\f102"; }
+.flaticon-talk:before { content: "\f103"; }
+.flaticon-elearning:before { content: "\f104"; }
+.flaticon-swim:before { content: "\f105"; }
+.flaticon-ear:before { content: "\f106"; }
+.flaticon-puzzle:before { content: "\f107"; }
+.flaticon-foot-massage:before { content: "\f108"; }
+.flaticon-meditate:before { content: "\f109"; }
+.flaticon-physiotherapist:before { content: "\f10a"; }
+.flaticon-physical-therapy:before { content: "\f10b"; }
+.flaticon-person:before { content: "\f10c"; }
+.flaticon-conference:before { content: "\f10d"; }
+.flaticon-online-support:before { content: "\f10e"; }
+.flaticon-phone-contact:before { content: "\f10f"; }
+.flaticon-child:before { content: "\f110"; }
+.flaticon-favourite:before { content: "\f111"; }
+.flaticon-left-arrow:before { content: "\f112"; }
+.flaticon-next:before { content: "\f113"; }
+.flaticon-check:before { content: "\f114"; }
+.flaticon-check-mark:before { content: "\f115"; }
+.flaticon-share:before { content: "\f116"; }
+.flaticon-calendar:before { content: "\f117"; }
+.flaticon-chat-comment-oval-speech-bubble-with-text-lines:before { content: "\f118"; }
+.flaticon-avatar:before { content: "\f119"; }
+.flaticon-tag:before { content: "\f11a"; }
+.flaticon-pin:before { content: "\f11b"; }
+.flaticon-call:before { content: "\f11c"; }
+.flaticon-email:before { content: "\f11d"; }
+.flaticon-facebook:before { content: "\f11e"; }
+.flaticon-linkedin:before { content: "\f11f"; }
+.flaticon-twitter:before { content: "\f120"; }
+.flaticon-youtube:before { content: "\f121"; }
+.flaticon-rss:before { content: "\f122"; }
+.flaticon-behance:before { content: "\f123"; }
+.flaticon-pinterest:before { content: "\f124"; }
+.flaticon-skype:before { content: "\f125"; }
+.flaticon-swing:before { content: "\f126"; }
+.flaticon-kindergarten:before { content: "\f127"; }
+.flaticon-translation-1:before { content: "\f128"; }
+.flaticon-open-book:before { content: "\f129"; }
+.flaticon-consultant:before { content: "\f12a"; }
+.flaticon-eye:before { content: "\f12b"; }
+.flaticon-piercing:before { content: "\f12c"; }
+.flaticon-therapy:before { content: "\f12d"; }
+.flaticon-conversation:before { content: "\f12e"; }
+.flaticon-speech-bubbles-with-a-heart-with-a-lifeline:before { content: "\f12f"; }
+.flaticon-negative-thinking:before { content: "\f130"; }
+.flaticon-pdf:before { content: "\f131"; }
+.flaticon-toys:before { content: "\f132"; }
+.flaticon-blocks:before { content: "\f133"; }
+.flaticon-puzzle-1:before { content: "\f134"; }
+.flaticon-shape-toy:before { content: "\f135"; }
+.flaticon-storytelling:before { content: "\f136"; }
+.flaticon-family:before { content: "\f137"; }
+.flaticon-play-with-child:before { content: "\f138"; }
+.flaticon-play-with-child-1:before { content: "\f139"; }
+.flaticon-jumping:before { content: "\f13a"; }
+.flaticon-boy:before { content: "\f13b"; }
+.flaticon-maternity:before { content: "\f13c"; }
+.flaticon-international-childrens-day:before { content: "\f13d"; }
+.flaticon-pinwheel:before { content: "\f13e"; }
+.flaticon-feeding-bottle:before { content: "\f13f"; }
+.flaticon-parenting:before { content: "\f140"; }
+.flaticon-balancer:before { content: "\f141"; }
+.flaticon-baby:before { content: "\f142"; }
+.flaticon-ring-toss:before { content: "\f143"; }
+.flaticon-kids:before { content: "\f144"; }
+.flaticon-doc:before { content: "\f145"; }
+.flaticon-rocking-horse:before { content: "\f146"; }
+.flaticon-baby-mobile:before { content: "\f147"; }
+.flaticon-school-bus:before { content: "\f148"; }
+.flaticon-school-bag:before { content: "\f149"; }
+.flaticon-crayon:before { content: "\f14a"; }
+.flaticon-book:before { content: "\f14b"; }
+.flaticon-graduation:before { content: "\f14c"; }
+.flaticon-backpack:before { content: "\f14d"; }
+.flaticon-stationery:before { content: "\f14e"; }
+.flaticon-education:before { content: "\f14f"; }

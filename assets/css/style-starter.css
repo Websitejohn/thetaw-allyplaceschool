@@ -152,249 +152,51 @@ body, html {
   padding: 0;
   font-family: Arial, sans-serif;
 }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap');
 
-/* Styles specifically for the banner section */
- 
-#banner-section {
-  width: 100%;
-  overflow-x: hidden;
-}
-
-#banner-section .banner-wrapper {
-  display: flex;
-  transition: filter 0.4s ease-in-out, border-radius 0.5s ease, transform 0.6s ease-in-out;
-}
-
-#banner-section .banner {
-  min-width: 100%;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  color: #fff;
-}
-
-#banner-section .banner-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-  transition: filter 0.4s ease-in-out, border-radius 0.5s ease, transform 0.6s ease-in-out;
-}
-
-#banner-section .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
-  z-index: 1;
-}
-
-#banner-section .banner-content {
-  position:relative;
-  z-index: 2;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 20px;
-  color: #fff;
-  animation: slideInUp 1s ease-out;
-}
-
-#banner-section .logo {
-  width: 150px;
-  margin-bottom: 20px;
-  filter: drop-shadow(2px 4px 6px black);
-  animation: fadeInDown 1s ease-out;
-  
-}
-
-#banner-section .taw {
-  width: 600px;
-  margin-bottom: 20px;
-  filter: drop-shadow(2px 4px 6px black);
-  animation: fadeInDown 1s ease-out;
-}
-
-#banner-section h1 {
-  font-size: 3em;
-  font-weight: 600;
-  color: #f8bd1bee;
-  margin-bottom: 10px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.63);
-  animation: fadeInLeft 1s ease-out;
-}
-
-#banner-section p {
-  font-size: 1.5em;
-  font-family: cursive;
-  color: #cac5db;
-  font-style: italic;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  animation: fadeInRight 1s ease-out;
-}
-
-#banner-section .decorative-elements {
+.congratulatory-slide {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
-  animation: bounceIn 1s ease-in-out;
+  padding: 20px;
+  min-height: 100vh;
 }
 
-#banner-section .badge {
-  width: 100px;
-  margin: 0 20px;
-  filter: drop-shadow(2px 4px 6px black);
-  animation: fadeInUp 1s ease-out;
+.congratulatory-message {
+  text-align: center;
+  padding: 20px;
+  background: rgba(242, 240, 243, 0.308);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  width: 100%;
+  font-family: 'Roboto', sans-serif; /* Set the base font */
 }
 
-#banner-section .buttons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
+.congratulatory-message h2 {
+  font-size: 2em;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif; /* Modern font for headings */
 }
 
-#banner-section .button {
-  padding: 15px 30px;
-  background-color: #021427;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+.congratulatory-message p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.message-from {
+  margin-top: 15px;
+  font-style: italic;
+  color: #777;
+}
+
+.from {
+  font-weight: bold;
   font-size: 1.2em;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-#banner-section .button:hover {
-  background-color: #003f7f;
-  transform: scale(1.05);
-}
-
-#banner-section .scroll-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 2;
-  cursor: pointer;
-}
-
-#banner-section .scroll-arrow.left {
-  margin-top: 60px;
-  left: 20px;
-}
-
-#banner-section .scroll-arrow.right {
-  margin-top: 60px;
-  right: 20px;
-}
-
-#banner-section .scroll-arrow img {
-  width: 50px;
-  height: 50px;
-  background: rgba(247, 244, 244, 0.411);
-  padding: 10px;
-  border-radius: 50%;
-  transition: background 0.3s ease, transform 0.3s ease;
-}
-
-#banner-section .scroll-arrow img:hover {
-  background: rgba(255, 252, 252, 0.541);
-  transform: scale(1.1);
-}
-
-/* Keyframes for animations */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translateX(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes bounceIn {
-  from, 20%, 40%, 60%, 80%, to {
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-  0% {
-    opacity: 0;
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-  20% {
-    transform: scale3d(1.1, 1.1, 1.1);
-  }
-  40% {
-    transform: scale3d(0.9, 0.9, 0.9);
-  }
-  60% {
-    opacity: 1;
-    transform: scale3d(1.03, 1.03, 1.03);
-  }
-  80% {
-    transform: scale3d(0.97, 0.97, 0.97);
-  }
-  to {
-    opacity: 1;
-    transform: scale3d(1, 1, 1);
-  }
-}
-
-@keyframes slideInUp {
-  from {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Responsive Styles */
@@ -437,7 +239,7 @@ body, html {
   }
 
   #banner-section .taw {
-    width: 400px;
+    width: 500px;
 }
 
 
@@ -471,7 +273,7 @@ body, html {
   }
 
   #banner-section .taw {
-    width: 300px;
+    width: 450px;
 }
 
 
@@ -505,7 +307,7 @@ body, html {
   }
 
   #banner-section .taw {
-    width: 300px;
+    width: 400px;
 }
 
   
@@ -522,10 +324,48 @@ body, html {
   #banner-section .buttons {
       flex-direction: column;
   }
-zzzzz
   #banner-section .button {
       font-size: 0.8em;
       padding: 6px 12px;
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .congratulatory-message {
+    padding: 15px;
+    margin-top: 15px;
+  }
+
+  .congratulatory-message h2 {
+    font-size: 1.7em;
+  }
+
+  .congratulatory-message p {
+    font-size: 0.9rem;
+  }
+
+  .from {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .congratulatory-message {
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .congratulatory-message h2 {
+    font-size: 1.5em;
+  }
+
+  .congratulatory-message p {
+    font-size: 0.85rem;
+  }
+
+  .from {
+    font-size: 1em;
   }
 }
 
@@ -805,7 +645,6 @@ textarea {
 .navbar-logo {
     max-height: auto; /* Adjust as needed */
     width: 70px;
-    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.13));    
     margin-right: 0; /* Adjust as needed */
 }
 

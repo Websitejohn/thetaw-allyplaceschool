@@ -211,7 +211,7 @@
                 <div class="row footer-top-29">
                     <div class="col-lg-4 col-md-6 footer-list-29">
                         <h6 class="footer-title-29">Contact Info </h6>
-                        <p class="mb-2 pe-xl-5" style="font-size: 13px;">Address : The Taw-Ally Place School, <br>32,Chief Olorunwo Avenue, Green Leaf<br> Estate (Road 9), Ebute-Ipakodo Road <br>Ikorodu, Lagos, Nigeria. 
+                        <p class="mb-2 pe-xl-5" style="font-size: 13px;">Address : The Taw-Ally Place School, <br>32,Chief Olorunwo Avenue, Green Leaf<br> Estate (Road 9), Ebute, Igbogbo Road, <br>Ikorodu, Lagos, Nigeria. 
                         </p>
                         <p class="mb-2" style="font-size: 13px;">Phone Number : <a href="tel:+2348060364077">+234 806-036-4077</a></p>
                         <p class="mb-2" style="font-size: 13px;">Email : <a href="mailto:thetaw-allyplaceschool@gmail.com" class="mail">thetaw-allyplaceschool@gmail.com</a></p>
@@ -220,7 +220,7 @@
                         <ul>
                             <h6 class="footer-title-29">Quick Links</h6>
                             <li><a href="about.html">About Us</a></li>
-                           
+                            <li><a href="courses.html">Courses</a></li>
                             <li><a href="#become-teacher">Become a Teacher</a></li>
                             <li><a href="contact.html">Contact Us</a></li>
                             <li><a href="#career">Career</a></li>
@@ -256,6 +256,31 @@
     <!-- //footer block -->
 
     <!-- Js scripts -->
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fas fa-level-up-alt" aria-hidden="true"></span>
+    </button>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- //move top -->
 
     <!-- common jquery plugin -->
     <script src="assets/js/jquery-3.3.1.min.js"></script>
