@@ -52,6 +52,29 @@
     <link href="//fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style-starter.css">
     <script src="assets/js/script.js"></script>
+    <style>
+        /* CSS */
+.map-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #f0f0f0; /* Optional: background color while loading */
+    border: 1px solid #ddd; /* Optional: border around the map */
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+    </style>
 </head>
 
 <body>
@@ -229,12 +252,13 @@
             </div>
         </div>
     </section>
-    <!-- map -->
-    <div class="map">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317718.69319292053!2d-0.3817765050863085!3d51.528307984912544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C+UK!5e0!3m2!1sen!2spl!4v1562654563739!5m2!1se"
-            width="100%" height="400" frameborder="0" style="border: 0px;" allowfullscreen=""></iframe>
-    </div>
+    <!-- HTML -->
+<div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15854.06420337226!2d3.4991579904705423!3d6.582586211404125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8df8675eae45%3A0xaae702904f15f9f4!2sThe%20Taw-Ally%20Place%20School!5e0!3m2!1sen!2sng!4v1724265744306!5m2!1sen!2sng"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<br>
+<br>
     <!-- //contact block -->
 
     
@@ -245,7 +269,7 @@
                 <div class="row footer-top-29">
                     <div class="col-lg-4 col-md-6 footer-list-29">
                         <h6 class="footer-title-29">Contact Info </h6>
-                        <p class="mb-2 pe-xl-5" style="font-size: 13px;">Address : The Taw-Ally Place School, <br>32,Chief Olorunwo Avenue, Green Leaf<br> Estate (Road 9), Ebute, Igbogbo Road, <br>Ikorodu, Lagos, Nigeria. 
+                        <p class="mb-2 pe-xl-5" style="font-size: 13px;">Address : The Taw-Ally Place School, <br>32,Chief Olorunwo Avenue, Green Leaf<br> Estate (Road 9), Ebute-Ipakodo Road, <br>Ikorodu, Lagos, Nigeria. 
                         </p>
                         <p class="mb-2" style="font-size: 13px;">Phone Number : <a href="tel:+2347078318781">+234 707-831-8781</a></p>
                         <p class="mb-2" style="font-size: 13px;">Email : <a href="mailto:thetaw-allyplaceschool@gmail.com" class="mail">thetaw-allyplaceschool@gmail.com</a></p>
