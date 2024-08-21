@@ -65,11 +65,159 @@
     <link rel="stylesheet" href="css/ionicons.min.css">
     
     <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/icomoon.cs">
     <link rel="stylesheet" href="css/style.css">
 
     <script src="assets/js/script.js"></script>
-       
+       <style>
+        /* General styles */
+/* General styles */
+.home-slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.slider-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.slider-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.slider-item .logo1 {
+    width: 20%;
+    position: relative;
+    max-width: 150px;
+    filter: drop-shadow(2px 4px 6px black);
+    animation: fadeInDown 1s ease-out;
+}
+
+.slider-item h1 {
+    color: #f8bd1bee;
+    font-size: 4em;
+    font-weight: 800;
+    animation: fadeInRight 1s ease-out;
+}
+
+.slider-item p {
+    font-family: cursive;
+    color: #cac5db;
+    font-style: italic;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: fadeInRight 1s ease-out;
+}
+
+.slider-item .btn {
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Congratulatory message */
+.banner-content {
+    max-width: 600px;
+    background-color:  rgba(242, 240, 243, 0.308);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1s ease-out;
+}
+
+.banner-content h2 {
+    color: #333;
+    font-family: 'Arial Black', sans-serif;
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+.banner-content p {
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.message-from {
+    margin-top: 20px;
+}
+
+.message-from p.from,
+.message-from p.person,
+.message-from p.contact {
+    color: #181717;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.message-from p.person {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .slider-item h1 {
+        font-size: 3em;
+    }
+
+    .slider-item p {
+        font-size: 1em;
+    }
+
+    .slider-item .logo1 {
+        width: 25%;
+        max-width: 120px;
+    }
+
+    .banner-content {
+        padding: 15px;
+    }
+
+    .banner-content h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider-item h1 {
+        font-size: 2em;
+    }
+
+    .slider-item p {
+        font-size: 0.9em;
+    }
+
+    .slider-item .logo1 {
+        width: 30%;
+        max-width: 100px;
+    }
+
+    .banner-content {
+        padding: 10px;
+    }
+
+    .banner-content h2 {
+        font-size: 1.2em;
+    }
+
+    .message-from p.from,
+    .message-from p.person,
+    .message-from p.contact {
+        font-size: 0.9em;
+    }
+}
+
+       </style>
 </head>
 
 <body>
@@ -145,70 +293,73 @@
             </div>
         </header>
         <!-- //header -->
-    <section class="home-slider owl-carousel">
-        <div class="slider-item" style="background-image:url(assets/images/b.jpg);">
-            <div class="overlay"></div>
-          <div class="container">
-            <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
-            <div class="col-md-8 text-center ftco-animate">
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <p><a href="#" class="btn btn-secondary px-4 py-3 mt-3">Enroll Now</a></p>
-            </div>
-          </div>
-          </div>
-        </div>
-  
-        <div class="slider-item" style="background-image:url(assets/images/img.jpg);">
-            <div class="overlay"></div>
-          <div class="container">
-            <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
-            <div class="banner-content text-center ftco-animate">
-              <h1 class="mb-4 " style=" font-size: 3em; font-weight: 600; color: #f8bd1bee;
-              margin-bottom: 10px;
-              text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.63);
-              animation: fadeInLeft 1s ease-out;">Discover Our programs</h1>
-              <p style="font-size: 1.5em;
-              font-family: cursive;
-              color: #cac5db;
-              font-style: italic;
-              margin-bottom: 20px;
-              text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-              animation: fadeInRight 1s ease-out;">We offer a wide range of educational <br>programs to suit every child's<br> needs.</p>
-              <p><a href="#" class="btn btn-secondary px-4 py-3 mt-3">Admission Now</a></p>
-            </div>
-          </div>
-          </div>
-        </div>
-
-        <div class="slider-item" style="background-image:url(assets/images/bg.jpg);">
-            <div class="overlay"></div>
-          <div class="container">
-            <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
-            <div class="col-md-8 text-center ftco-animate">
-                <div class="banner-content">
-                    
-                    <div class="congratulatory-slide">
-                    <div class="congratulatory-message">
-                        <h2 class="" style="margin-bottom: 10px;">ESALAGOS</h2>
-                       <article> <p style="color: black; font-family: Arial, Helvetica,;">Congratulations to The Taw-Ally<br> Place School on it's grand opening!<br>This is an exciting step forward in <br> providing educational opportunities<br>for the community. We wish you all<br> the best in this new endeavour </p></article>
-                        <div class="message-from">
-                            <p class="from" style="color: #181717;font-family: Georgia, 'Times New Roman', Times, ;">Message from:</p>
-                            <p class="person" style="color: #0e0e0d; font-family: Georgia, 'Times New Roman', Times, ;">Adojutelegan Simbiat Adenike</p>
-                            <p class="contact" >Address: Coral Reef Estate<br> Opposite Capital Mall, Orchid Hotel Road, Chevron Lagos<br>Number: +234 812 143 1941</p>
+        <section class="home-slider owl-carousel">
+            <div class="slider-item" style="background-image:url(assets/images/b.jpg);">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+                        <div class="col-md-8 text-center ftco-animate">
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <p><a href="contact.html" class="btn btn-secondary px-4 py-3 mt-3">Enroll Now</a></p>
                         </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          </div>
-        </div>
-      </section>
+        
+            <div class="slider-item" style="background-image:url(assets/images/img.jpg);">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row no-gutters  align-items-center justify-content-center" data-scrollax-parent="true">
+                            <img src="assets/images/logo.png" alt="The Taw-Ally Place School Logo" class="logo1">
+                            <h1 class="mb-4">Discover Our Programs</h1>
+                            <p>We offer a wide range of educational programs to suit every child's needs.</p>
+                            <p><a href="contact.html" class="btn btn-secondary px-4 py-3 mt-3">Admission Now</a></p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="slider-item" style="background-image:url(assets/images/banner.jpg);">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row no-gutters  align-items-center justify-content-center" data-scrollax-parent="true">
+                            
+                    </div>
+                </div>
+            </div>
+        
+            <div class="slider-item" style="background-image:url(assets/images/bg.jpg);">
+                <div class="overlay"></div>
+                
+                            <div class="banner-content">
+                                <div class="congratulatory-slide">
+                                    <div class="congratulatory-message">
+                                        <h2>ESALAGOS</h2>
+                                        <article>
+                                            <p>Congratulations to The Taw-Ally Place School on its grand opening! This is an exciting step forward in providing educational opportunities for the community. We wish you all the best in this new endeavor.</p>
+                                        </article>
+                                        <div class="message-from">
+                                            <p class="from">Message from:</p>
+                                            <p class="person">Adojutelegan Simbiat Adenike</p>
+                                            <p class="contact">Address: Coral Reef Estate<br> Opposite Capital Mall, Orchid Hotel Road, Chevron Lagos<br>Number: +234 812 143 1941</p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
   
       <section class="ftco-services ftco-no-pb">
               <div class="container-wrap">
@@ -382,9 +533,9 @@
                         <img src="assets/images/img1.png" alt="" class="img-fluid radius-image">
                     </div>
                     <div class="imginfo__box">
-                        <h6 class="imginfo__title">Get an Appointment Today!</h6>
+                        <h6 class="imginfo__title" style="color: #000;">Get an Appointment Today!</h6>
                         <p>Get in touch with us for a personalized <br> quote tailored to your needs.</p>
-                        <a href="tel:+234 8060364077"><i class="fas fa-phone-alt"></i>+234 806-036-4077</a>
+                        <a href="tel:+2347078318781"><i class="fas fa-phone-alt"></i>+234 707 831 8781</a>
                     </div>
                 </div>
                 
@@ -522,7 +673,7 @@
                 <div class="right-content-call mt-lg-0 mt-4">
                     <ul class="buttons">
                         <li class="phone-sec me-lg-4"><i class="fas fa-phone-volume"></i>
-                            <a class="call-style-w3" href="tel:+2348060364077">+234 806-036-4077</a>
+                            <a class="call-style-w3" href="tel:+2347078318781">+234 707-831-8781</a>
                         </li>
                        
                     </ul>
@@ -541,7 +692,7 @@
                         <h6 class="footer-title-29">Contact Info </h6>
                         <p class="mb-2 pe-xl-5" style="font-size: 13px;">Address : The Taw-Ally Place School, <br>32,Chief Olorunwo Avenue, Green Leaf<br> Estate (Road 9), Ebute, Igbogbo Road, <br>Ikorodu, Lagos, Nigeria. 
                         </p>
-                        <p class="mb-2" style="font-size: 13px;">Phone Number : <a href="tel:+2348060364077">+234 806-036-4077</a></p>
+                        <p class="mb-2" style="font-size: 13px;">Phone Number : <a href="tel:+2347078318781">+234 707-831-8781</a></p>
                         <p class="mb-2" style="font-size: 13px;">Email : <a href="mailto:thetaw-allyplaceschool@gmail.com" class="mail">thetaw-allyplaceschool@gmail.com</a></p>
                     </div> 
                     <div class="col-lg-2 col-md-3 col-6 footer-list-29 mt-md-0 mt-4">
