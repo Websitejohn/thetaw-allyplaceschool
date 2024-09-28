@@ -68,7 +68,7 @@
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mx-lg-auto">
-          <li class="nav-item ">
+          <li class="nav-item active">
             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item @@about__active">
@@ -79,7 +79,7 @@
               Our Services <span class="fa fa-angle-down"></span>
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item @@b__active" href="courses.html">Digital Learning Environment</a>
+              <a class="dropdown-item @@b__active" href="blog.html">Digital Learning Environment</a>
             </div>
           </li>
           <li class="nav-item dropdown @@pages__active">
@@ -91,7 +91,7 @@
               <a class="dropdown-item @@b__active" href="blog.html">Our Team</a>
             </div>
           </li>
-          <li class="nav-item @@contact__active active">
+          <li class="nav-item @@contact__active">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
         </ul>
@@ -136,14 +136,15 @@
   </div>
 </header>
 <!--/header-->
+
 <!-- about breadcrumb -->
 <section class="w3l-breadcrumb">
     <div class="breadcrumb-bg breadcrumb-bg-about py-5">
         <div class="container pt-lg-5 pt-3 p-lg-4 pb-3">
-            <h2 class="title mt-5 pt-lg-5 pt-sm-3">Get in touch</h2>
+            <h2 class="title mt-5 pt-lg-5 pt-sm-3">Signup / Registration page</h2>
             <ul class="breadcrumbs-custom-path pb-sm-5 pb-4 mt-2 text-center mb-md-5">
                 <li><a href="index.html">Home</a></li>
-                <li class="active"> / Contact us </li>
+                <li class="active"> / Signup </li>
             </ul>
         </div>
     </div>
@@ -154,101 +155,46 @@
     </div>
 </section>
 <!-- //about breadcrumb -->
-<!-- contact block -->
-<!-- contact1 -->
-<section class="w3l-contact-1 pb-5" id="contact">
-  <div class="contacts-9 py-lg-5 py-md-4">
-      <div class="container">
-          <div class="d-grid contact-view">
-              <div class="cont-details">
-                  <h4 class="title-small">Reach Out to Us</h4>
-                  <h3 class="title-big mb-4">We’re Here to Help You</h3>
-                  <p class="mb-sm-5 mb-4">Connect with our team to learn more about our personalized ABA therapy services. We’re here to assist you and will respond within 24 hours.</p>
-
-                  <div class="cont-top">
-                      <div class="cont-left text-center">
-                          <span class="fa fa-map-marker text-primary"></span>
-                      </div>
-                      <div class="cont-right">
-                          <h6>Our Main Office</h6>
-                          <p class="pr-lg-5">123 Therapy Road, Suite 100, Chicago, IL - 12345.</p>
-                      </div>
-                  </div>
-                  <div class="cont-top margin-up">
-                      <div class="cont-left text-center">
-                          <span class="fa fa-phone text-primary"></span>
-                      </div>
-                      <div class="cont-right">
-                          <h6>Phone Support</h6>
-                          <p><a href="tel:+(123) 456 7890">+(123) 456 7890</a></p>
-                      </div>
-                  </div>
-                  <div class="cont-top margin-up">
-                      <div class="cont-left text-center">
-                          <span class="fa fa-envelope-o text-primary"></span>
-                      </div>
-                      <div class="cont-right">
-                          <h6>Email Support</h6>
-                          <p><a href="mailto:support@abatherapy.com" class="mail">support@abatherapy.com</a></p>
-                      </div>
-                  </div>
-              </div>
-              <div class="map-content-9">
-                  <h5 class="mb-sm-4 mb-3">Write to Us</h5>
-                  <form id="contactForm">
-                    <div class="twice-two">
-                        <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required="">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
-                    </div>
-                    <div class="twice">
-                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
-                    </div>
-                    <textarea name="message" class="form-control" id="message" placeholder="How can we help you?" required=""></textarea>
-                    <div class="text-right">
-                        <button type="submit" class="btn btn-primary btn-style mt-4">Send Message</button>
-                    </div>
-                </form>
-            
-                <!-- Success/Error Message -->
-                <div id="responseMessage" style="display:none; margin-top: 20px;"></div>
-            
-                <script>
-                    $(document).ready(function() {
-                        $('#contactForm').submit(function(e) {
-                            e.preventDefault();  // Prevent form from submitting normally
-            
-                            $.ajax({
-                                url: 'submit_contact.php', // The PHP file where the data is processed
-                                type: 'POST',
-                                data: $(this).serialize(),  // Serialize form data
-                                dataType: 'json',  // Expect JSON response from the server
-                                success: function(response) {
-                                    if (response.success) {
-                                        $('#responseMessage').css('color', 'green').text(response.message).fadeIn();
-                                    } else {
-                                        $('#responseMessage').css('color', 'red').text(response.message).fadeIn();
-                                    }
-                                },
-                                error: function() {
-                                    $('#responseMessage').css('color', 'red').text("There was an error submitting the form. Please try again.").fadeIn();
-                                }
-                            });
-                        });
-                    });
-                </script>
-              </div>
-          </div>
-      </div>
-  </div>
+<section class="w3l-loginblock pb-5" id="contact">
+    <div class="contacts-9 pb-lg-5 pb-md-4">
+        <div class="container">
+            <div class="top-map">
+                <div class="map-content-9">
+                    <form action="#" method="post" class="">
+                        <div class="form-grid signupgrids">
+                            <div class="input-field">
+                                <label> First Name * </label>
+                                <input type="text" name="first_name" id="first_name" placeholder="First name" required="">
+                            </div>
+                            <div class="input-field">
+                                <label> Last Name </label>
+                                <input type="text" name="last_name" id="last_name" placeholder="Last name" required="">
+                            </div>
+                            <div class="input-field">
+                                <label> Phone number </label>
+                                <input type="text" name="phone" id="phone" placeholder="Phone number" required="">
+                            </div>
+                            <div class="input-field">
+                                <label> Username or Email * </label>
+                                <input type="email" name="email" id="email" placeholder="Username or Email" required="">
+                            </div>
+                            <div class="input-field">
+                                <label> Password *</label>
+                                <input type="password" name="Password" id="Password" placeholder="Password" required="">
+                            </div>
+                            <div class="input-field">
+                                <label> Confirm Password *</label>
+                                <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm password" required="">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-style mt-4">Signup / Regiser now </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 </section>
-
-<!-- /contact1 -->
-<div class="map-iframe">
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317718.69319292053!2d-0.3817765050863085!3d51.528307984912544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C+UK!5e0!3m2!1sen!2spl!4v1562654563739!5m2!1sen!2spl"
-        width="100%" height="400" frameborder="0" style="border: 0px;" allowfullscreen=""></iframe>
-</div>
-<!-- //contact block -->
 <!-- footer -->
 <section class="w3l-footer-29-main">
   <div class="footer-29 py-5">
@@ -258,7 +204,7 @@
           <h6 class="footer-title-29">Contact Info </h6>
           <p>Address : Study course, 343 marketing, #2214 cravel street, NY - 62617.</p>
           <p class="my-2">Phone : <a href="tel:+1(21) 234 4567">+1(21) 234 4567</a></p>
-          <p>Email : <a href="mailto:info@example.com">info@example.com</a></p>
+          <p>Email : <a href="/cdn-cgi/l/email-protection#bad3d4dcd5fadfc2dbd7cad6df94d9d5d7"><span class="__cf_email__" data-cfemail="7b12151d143b1e031a160b171e55181416">[email�&nbsp;protected]</span></a></p>
           <div class="main-social-footer-29 mt-4">
             <a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a>
             <a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
@@ -271,7 +217,7 @@
           <ul>
             <h6 class="footer-title-29">Company</h6>
             <li><a href="about.html">About company</a></li>
-            <li><a href="#blog"> Latest Blog posts</a></li>
+            <li><a href="blog.html"> Latest Blog posts</a></li>
             <li><a href="#teacher"> Became a teacher </a></li>
             <li><a href="courses.html">Online Courses</a></li>
             <li><a href="contact.html">Get in touch</a></li>
@@ -290,8 +236,8 @@
         </div>
         <div class="col-lg-3 col-md-6 col-sm-7 footer-list-29 footer-4 mt-lg-0 mt-5">
           <h6 class="footer-title-29">Suppport</h6>
-          <a href="#playstore"><img src="assets/images/googleplay.png" class="img-responsive" alt=""></a>
-          <a href="#appstore"><img src="assets/images/appstore.png" class="img-responsive mt-3" alt=""></a>
+          <a href="#playstore"><img src="images/googleplay.png" class="img-responsive" alt=""></a>
+          <a href="#appstore"><img src="images/appstore.png" class="img-responsive mt-3" alt=""></a>
         </div>
       </div>
     </div>
@@ -299,16 +245,15 @@
   <!-- copyright -->
   <section class="w3l-copyright text-center">
     <div class="container">
-      <p class="copy-footer-29">© 2020 Study Course. All rights reserved. Design by <a href="https://w3layouts.com/"
-          target="_blank">
+      <p class="copy-footer-29">© 2020 Study Course. All rights reserved. Design by <a href="https://w3layouts.com/" target="_blank">
           W3Layouts</a></p>
     </div>
 
     <!-- move top -->
     <button onclick="topFunction()" id="movetop" title="Go to top">
-      &#10548;
+      ⤴
     </button>
-    <script>
+    <script data-cfasync="false" src="js1/email-decode.min.js"></script><script>
       // When the user scrolls down 20px from the top of the document, show the button
       window.onscroll = function () {
         scrollFunction()
@@ -335,19 +280,19 @@
 <!-- //footer -->
 
 <!-- Template JavaScript -->
-<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="js1/jquery-3.3.1.min.js"></script>
 
-<script src="assets/js/theme-change.js"></script>
+<script src="js1/theme-change.js"></script>
 
 <!-- stats number counter-->
-<script src="assets/js/jquery.waypoints.min.js"></script>
-<script src="assets/js/jquery.countup.js"></script>
+<script src="js1/jquery.waypoints.min.js"></script>
+<script src="js1/jquery.countup.js"></script>
 <script>
   $('.counter').countUp();
 </script>
 <!-- //stats number counter -->
 
-<script src="assets/js/owl.carousel.js"></script>
+<script src="js1/owl.carousel.js"></script>
 <!-- script for banner slider-->
 <script>
   $(document).ready(function () {
@@ -448,9 +393,10 @@
 </script>
 <!--//MENU-JS-->
 
-<script src="assets/js/bootstrap.min.js"></script>
+<script src="js1/bootstrap.min.js"></script>
 
 
-</body>
 
-</html>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8c27fb376d0166b0',t:'MTcyNjIyODg3My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+
+</body></html>
